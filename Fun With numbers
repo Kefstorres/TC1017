@@ -1,0 +1,61 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+
+  int Num1, Num2, Dif, Pro, Div, Rem ;
+  char Oper, D, P, d, R;
+
+  cout << "Fun with numbers gonna calculate the difference ot two numbers, the product, the division and the remainder" <<endl;
+
+  cout<<"Give me your first number "<< endl;
+  cin>> Num1;
+  cout<<"Give me your second number"<< endl;
+  cin>> Num2;
+
+  cout<<"What you want to do? Difference= D, Product=P, Division=d, Remainder=R"<<endl;
+  cin>> Oper;
+
+    switch (Oper)
+     {
+      case 'D' :
+
+        Dif = Num2 - Num1;
+
+        cout << "The result is "<< Dif << endl;
+
+        break;
+
+      case 'P' :
+
+        Pro = Num1 * Num2;
+
+        cout << "The result is " << Pro << endl;
+
+        break;
+
+      case 'd' :
+
+        Div= Num1 / Num2;
+
+        cout << "The result is "<< Div << endl;
+
+        break;
+
+      case 'R' :
+
+        Rem = Num1 % Num2;
+
+        cout << "The result is "<< Rem << endl;
+
+        break;
+
+      default:
+
+        cout<<"Sorry you didn't choose a option of this program"<< endl;
+   }
+
+  return 0;
+}
